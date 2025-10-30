@@ -64,7 +64,7 @@ function App() {
         <h1 className="text-3xl font-bold">Recent notes</h1>
         <div id="taskscroll" className="flex flex-wrap gap-5 mt-5 overflow-auto h-[85vh]">
           {task.map(function(elem,idx){
-            return <div id="taskscroll" key={idx} className="h-60 w-50 bg-cover bg-center rounded-2xl bg-[url('https://png.pngtree.com/png-vector/20230102/ourmid/pngtree-beautiful-aesthetic-pastel-sticky-notes-png-image_6548934.png')] text-black p-10 overflow-auto relative">
+            return <div id="taskscroll" key={idx} className="h-60 w-50 bg-cover bg-center rounded-2xl bg-[url('https://png.pngtree.com/png-vector/20230102/ourmid/pngtree-beautiful-aesthetic-pastel-sticky-notes-png-image_6548934.png')] text-black p-10 overflow-auto relative  text-wrap">
 
               <h2 className="absolute top-8 right-5 bg-[#F1CBB1] p-2 rounded-full active:bg-[#eca678] cursor-pointer" 
               onClick={()=>{
@@ -74,7 +74,7 @@ function App() {
               </h2>
 
               <h3 className="leading-tight text-xl font-bold ">{elem.title} </h3>
-              <p className="leading-tight font-medium text-gray-700 mt-2 ">
+              <p className="leading-tight font-medium text-gray-700 mt-2  ">
                 {elem.details}
               </p>
             </div>
